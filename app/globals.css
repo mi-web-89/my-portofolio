@@ -1,19 +1,32 @@
 @import "tailwindcss";
 
-/* Kustomisasi Tema */
-@theme {
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui;
-  --color-brand: #3b82f6;
-  --color-brand-dark: #1e3a8a;
+@custom-variant dark (&:where(.dark, .dark *));
 
-  /* custom color */
-  --color-primary: #0ea5e9;
-  --color-secondary: #64748b;
+@theme {
+    --color-background-light: hsl(0 0% 98%);
+    --text-primary-light: hsl(304 54.4% 14%);
+    --color-background-dark: hsl(304 54.4% 7.5%);
+    --text-primary-dark: hsl(0 0% 98%);
+  }
+
+/* globals.css */
+:root {
+  --background: var(--color-background-light);
+  --foreground: var(--text-primary-light);
 }
 
-/* Base style tambahan jika diperlukan */
-@layer base {
-  body {
-    @apply antialiased text-slate-900 bg-white dark:bg-slate-950 dark:text-white;
-  }
+.dark {
+  --background: var(--color-background-dark);
+  --foreground: var(--text-primary-dark);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.3s, color 0.3s;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
