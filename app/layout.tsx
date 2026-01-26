@@ -1,18 +1,25 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "./components/header";
+import { themeScript } from "./lib/theme-script";
 
-import Header from "./component/Header";
-import Footer from "./component/Footer";
-
+// Konfigurasi font
 const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-inter",
+  display: "swap",
+  variable: "--font-inter", // Menggunakan CSS Variable
+});
+
+const robotoMono = Roboto_Mono({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-roboto-mono",
 });
 
 export const metadata: Metadata = {
   title: "Muhammad Ismail",
-  description: "My Portofolio - Tech enthusiast and Frontend developer",
+  description: "My Portofolio - Frontend engineer",
 };
 
 export default function RootLayout({
@@ -21,11 +28,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter} font-sans`}>
+    <html lang="en" suppressHydrationWarning>
+      {/* suppressHydrationWarning penting agar tidak error saat mismatch tema antara server & client */}
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }}></script>
+      </head>
+
+      <body className={`${inter} ${robotoMono}`}>
         <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );
