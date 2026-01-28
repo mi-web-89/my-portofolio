@@ -11,6 +11,7 @@ export function Avatar({
 }>) {
   return (
     <Image
+      priority
       src={src}
       alt={alt}
       width={size}
