@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center">
       {/* profile */}
-      <section className="flex flex-col items-center justify-center space-y-4 border py-4 px-1">
+      <section className="flex flex-col items-center justify-center space-y-4 py-4 px-1">
         <Avatar src={defaultAvatar} size={192} alt="User Avatar" />
         <h1 className="text-4xl font-bold">Muhammad Ismail</h1>
         <p className="text-justify">
