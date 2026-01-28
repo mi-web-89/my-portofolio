@@ -3,6 +3,7 @@ import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header";
 import { themeScript } from "./lib/theme-script";
+import { GlowCursor } from "./components/glow-cursor";
 
 // Konfigurasi font
 const inter = Inter({
@@ -36,6 +37,7 @@ export default function RootLayout({
 
       <body className={`${inter} ${robotoMono}`}>
         <Header />
+        <GlowCursor />
         {children}
       </body>
     </html>
