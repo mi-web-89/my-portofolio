@@ -24,7 +24,10 @@ export function ThemeToggle() {
   };
 
   return (
-    <button onClick={toggleTheme} className="rounded-md px-3 py-2 text-sm">
+    <button
+      onClick={toggleTheme}
+      className="rounded-md px-3 py-2 text-sm border-current/20 hover:border-current/40 transition-colors border"
+    >
       {isDark ? "🌙" : "☀️"}
     </button>
   );
