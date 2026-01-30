@@ -27,13 +27,6 @@ A personal portfolio website showcasing my background, skills, and projects as a
 * RESTful API integration
 * ESLint & Prettier
 
-## 📈 Future Improvements
-
-* Add more real-world projects
-* Improve animations and micro-interactions
-* Integrate blog or article section
-* Enhance performance and SEO optimization
-
 ## 👤 Author
 
 **Muhammad Ismail**
