@@ -16,7 +16,7 @@ A personal portfolio website showcasing my background, skills, and projects as a
 
 **Frontend**
 
-* React.js / Next.js / Nuxt.js
+* React.js / Next.js
 * TypeScript
 * Tailwind CSS
 * HTML5 & CSS3
