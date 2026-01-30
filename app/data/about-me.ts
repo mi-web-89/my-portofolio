@@ -1,0 +1,4 @@
+export const ABOUT_ME = `
+I am a programmer with over three years of professional experience working with native PHP as a full-stack developer and Vue.js as a frontend developer. After that period, I stepped away from software development to focus on building my own business.
+
+Currently, I am returning to the tech industry and actively deepening my knowledge in modern frontend development, including technologies such as React.js, Next.js, Git, TypeScript, Tailwind CSS, and other related tools. I am highly motivated to continuously learn and adapt to new technologies in order to build scalable, maintainable, and user-focused web applications.`
