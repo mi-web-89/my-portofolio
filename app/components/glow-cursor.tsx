@@ -3,8 +3,8 @@
 import { useEffect, useRef } from "react";
 
 // ===== CONFIG =====
-const BASE_SIZE = 340;
-const FOLLOW_SPEED = 0.14;
+const BASE_SIZE = 360;
+const FOLLOW_SPEED = 0.16;
 
 const OUTER_ROTATE = 0.35;
 const INNER_ROTATE = -0.9;
