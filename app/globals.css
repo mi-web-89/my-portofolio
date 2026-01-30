@@ -30,3 +30,22 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* Hide scrollbar for scrollable sections */
+.overflow-y-auto::-webkit-scrollbar {
+  width: 0;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* Firefox */
+.overflow-y-auto {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
